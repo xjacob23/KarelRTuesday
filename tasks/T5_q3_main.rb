@@ -11,16 +11,26 @@ def task()
 
 
 
-  karel = JacobRobot.new(3, 3, Robota::NORTH, 5)
-  karel.put_beeper
+  karel = JacobRobot.new(3, 3, Robota::NORTH, 25)
+  karel.place_line
+  karel.turn_right
   karel.move
-  karel.put_beeper
+  karel.turn_right
+  karel.place_line
+  karel.turn_left
   karel.move
-  karel.put_beeper
+  karel.turn_left
+  karel.place_line
+  karel.turn_right
   karel.move
-  karel.put_beeper
+  karel.turn_right
+  karel.place_line
+  karel.turn_left
   karel.move
-  karel.put_beeper
+  karel.turn_left
+  karel.place_line
+  karel.turn_off
+
 
 
 
