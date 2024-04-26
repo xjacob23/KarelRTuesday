@@ -1,7 +1,9 @@
 require_relative "../karel/ur_robot"
-
+require_relative "../mixins/jacob"
 # MON premier robot 
 class JacobRobot < UrRobot
+
+include Jacob 
 
    def turn_right
    	   turn_left
@@ -40,6 +42,31 @@ class JacobRobot < UrRobot
        pick_beeper
    end
 
+   def quickspin
+   	   turn_left
+   	   turn_left
+   end
+
+   def right_spin
+       turn_right
+       turn_right
+       turn_right
+    end
+
+
+
+   def turn_rightnmove
+   	   move
+   	   turn_right
+   end 
+   
+
+   def turn_leftnmove
+       move
+   	   turn_left
+   end 
+
+
  
    def big_step
    	   move
@@ -60,6 +87,67 @@ class JacobRobot < UrRobot
        move
        pick_beeper
    end
+
+   def placetop
+   	   put_beeper
+   	   move
+   	   put_beeper
+   	   move
+   	   put_beeper
+   	   move
+   	   put_beeper
+   	   move	
+   	   put_beeper
+   	   move
+   	   put_beeper
+   	   move
+   	   put_beeper
+   	   move
+   	   put_beeper
+   	   move
+   	   put_beeper
+   	   move	
+   	   put_beeper
+   end 
+
+   def place9   
+   	   put_beeper
+   	   move
+   	   put_beeper
+   	   move
+   	   put_beeper
+   	   move
+   	   put_beeper
+   	   move	
+   	   put_beeper
+   	   move
+   	   put_beeper
+   	   move
+   	   put_beeper
+   	   move
+   	   put_beeper
+   	   move
+   	   put_beeper
+   end  
+
+   def place8
+   	   put_beeper
+   	   move
+   	   put_beeper
+   	   move
+   	   put_beeper
+   	   move
+   	   put_beeper
+   	   move	
+   	   put_beeper
+   	   move
+   	   put_beeper
+   	   move
+   	   put_beeper
+   	   move
+   	   put_beeper
+   end
+
 
 
 end

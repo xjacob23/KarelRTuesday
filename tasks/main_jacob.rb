@@ -9,16 +9,10 @@ require_relative "jacob_robot"
 # a task for a stair sweeper
 def task()
 
-  world = Robota::World
-  world.read_world("../worlds/t4q4.txt")
+   world = Robota::World
+  world.read_world("../worlds/Cube beton")
 
-  karel = JacobRobot.new(3, 3, Robota::NORTH, 5)
-  karel.place_line
-
-
-
-
-
+  karel = JacobRobot.new(11, 2, Robota::NORTH, 10)
 
 
 
@@ -38,7 +32,7 @@ end
 
 if __FILE__ == $0
   if $graphical
-     screen = window(8, 75) # (size, speed)
+     screen = window(14, 80) # (size, speed)
      screen.run do
        task
      end
