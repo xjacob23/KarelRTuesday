@@ -4,26 +4,24 @@
 
 $graphical = true
 
-require_relative "jacob_robot"
+require_relative "deux_bloc_robot"
 
 # a task for a stair sweeper
 def task()
 
-   world = Robota::World
-  world.read_world("../worlds/Cube beton")
 
-  karel = JacobRobot.new(11, 2, Robota::NORTH, 40)
-  karel.turn_right
-  karel.placetop
+
+  karel = DeuxBlocRobot.new(1, 1, Robota::NORTH, 40)
+  karel.move
+  karel.move
   karel.turn_right
   karel.move
-  karel.place9
+  karel.move
   karel.turn_right
   karel.move
-  karel.place9
+  karel.move
   karel.turn_right
   karel.move
-  karel.place8
   karel.move
   karel.turn_off
 
