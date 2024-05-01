@@ -5,13 +5,20 @@
  The beginnings of a student defined module to be mixed in to other classes to provide
  auxiliary methods that are generally useful.  
 =end
-module Jacob
+module Jacob 
 
   # Turn right by executing three turn left actions
   def turn_right
     turn_left
     turn_left
     turn_left
+  end
+
+  def bigstep
+      move 
+      move
+      move
+      move
   end
   
   # Turn around by executing two turn left actions
@@ -29,102 +36,14 @@ module Jacob
     turn_around
   end
 
-  def pick_up_1
-      move
-      pick_beeper
-  end
-
-  def pick_up_2
-      pick_beeper
-      move
-      pick_beeper
-      move
-  end
-
-  def pick_up_2weird
+  def go 
       pick_beeper
       move
       move
-      pick_beeper
-  end 
-
-  def pick_up_3
-      pick_beeper
       move
-      pick_beeper
-      move
-      pick_beeper
-      move
-  end
-
-  def pick_up_3weird 
-      pick_beeper
-      move
-      move
-      pick_beeper
-      move
-      move
-      pick_beeper
-      move
-  end
-
-  def pick_up_4weird
-      pick_beeper
-      move
-      move
-      pick_beeper
-      move
-      move
-      pick_beeper
-      move
-      move
-      pick_beeper
-  end
-
-  def place1
-      put_beeper
-      move
-  end
-
-  def place2weird
-      put_beeper
       move
       move
       put_beeper
   end
-
-  def place3weird
-      put_beeper
-      move
-      move
-      put_beeper
-      move
-      move
-      put_beeper
-      move
-  end
-
-  def place4weird
-      put_beeper
-      move
-      move
-      put_beeper
-      move
-      move
-      put_beeper
-      move
-      move
-      put_beeper
-  end
-
-
-
-
-
-
-
-
-
-
 
 end

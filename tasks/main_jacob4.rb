@@ -4,38 +4,24 @@
 
 $graphical = true
 
-require_relative "deux_bloc_robot"
+require_relative "robot_face_nord"
 
 # a task for a stair sweeper
 def task()
 
 
 
-  karel = DeuxBlocRobot.new(1, 1, Robota::NORTH, 40)
-  karel.move
-  karel.move
-  karel.turn_right
-  karel.move
-  karel.move
-  karel.turn_right
-  karel.move
-  karel.move
-  karel.turn_right
-  karel.move
-  karel.move
+  karel = RobotFaceNord.new(5, 5, 10, :green)
+
+  karel.turn_left
+  karel.bigstep
+  karel.turn_left
+  karel.bigstep
+  karel.turn_left
+  karel.turn_left
   karel.turn_off
 
  
-
-
-
-
-
-
-
-
-
-
 
 
 

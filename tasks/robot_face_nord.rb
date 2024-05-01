@@ -6,8 +6,8 @@ class RobotFaceNord < UrRobot
 
 include Jacob 
 
-  def initialize(street, avenue, beepers)
-      super(street, avenue, Robota::NORTH, beepers)
+  def initialize(street, avenue, beepers, colour)
+      super(street, avenue, Robota::NORTH, beepers, colour)
   end
   
 end
