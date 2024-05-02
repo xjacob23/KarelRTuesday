@@ -5,7 +5,7 @@
  The beginnings of a student defined module to be mixed in to other classes to provide
  auxiliary methods that are generally useful.  
 =end
-module Jacob 
+module Jacob
 
   # Turn right by executing three turn left actions
   def turn_right
@@ -45,7 +45,7 @@ module Jacob
       move
       put_beeper
   end
-
+ 
   def hop
       move
       move

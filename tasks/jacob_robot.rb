@@ -18,18 +18,7 @@ include Jacob
        turn_left
    	   turn_left 
    end
-   
-   def place_line
-   	   put_beeper
-   	   move
-   	   put_beeper
-   	   move
-   	   put_beeper
-   	   move
-   	   put_beeper
-   	   move
-   	   put_beeper
-   end
+  
    
 
    def pick_up_small_row

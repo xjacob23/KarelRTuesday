@@ -1,9 +1,9 @@
 require_relative "../karel/ur_robot"
-require_relative "../mixins/jacob"
+require_relative "../mixins/helper"
 # MON premier robot 
 class JacobRobot < UrRobot
 
-include Jacob 
+include Helper
 
    def turn_right
    	   turn_left
@@ -17,19 +17,6 @@ include Jacob
    	   move
        turn_left
    	   turn_left 
-   end
-   
-   
-   
-
-   def pick_up_small_row
-       pick_beeper
-       move
-       pick_beeper
-       move
-       pick_beeper
-       move
-       pick_beeper
    end
 
    def quickspin

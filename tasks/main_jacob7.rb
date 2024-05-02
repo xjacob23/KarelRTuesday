@@ -4,41 +4,36 @@
 
 $graphical = true
 
-require_relative "jacob_robot3"
+require_relative "jacob_robot4"
 
 # a task for a stair sweeper
 def task()
 
-
+ world = Robota::World
+  world.read_world("../worlds/grinch.kwld")
 
   karel = JacobRobot.new(1, 6, Robota::NORTH, 26)
-  karel.put_beeper
+  karel.turn_right
+  karel.go
+  karel.turn_left
+  karel.go
+  karel.turn_left
+  karel.move
+  karel.steal
+  karel.turn_around
+  karel.get_out
   karel.turn_left
   karel.hop
-  karel.turn_right 
-  karel.move
-  karel.turn_right
-  karel.drop
+  karel.steal
+  karel.turn_around
+  karel.get_out
   karel.turn_left
-  karel.move
-  karel.turn_left
-  karel.move
-  karel.place
+  karel.hop
+  karel.steal
+  karel.turn_around
+  karel.get_out
+  karel.hop
   karel.turn_right
-  karel.move
-  karel.turn_right
-  karel.move
-  karel.three
-  karel.recenter
-  karel.three
-  karel.turner
-  karel.three
-  karel.recenter
-  karel.three
-  karel.turner
-  karel.move
-  karel.put_beeper
-  karel.turn_off
 
 
 
@@ -56,7 +51,7 @@ end
 
 if __FILE__ == $0
   if $graphical
-     screen = window(11, 80) # (size, speed)
+     screen = window(15, 80) # (size, speed)
      screen.run do
        task
      end
