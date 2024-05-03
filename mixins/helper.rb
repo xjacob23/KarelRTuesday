@@ -72,6 +72,34 @@ module Helper
       move
   end
 
+  def deposit
+      put_beeper
+      put_beeper
+      put_beeper
+      put_beeper
+      put_beeper
+      put_beeper
+      put_beeper
+      put_beeper
+      put_beeper
+      put_beeper
+      put_beeper
+      put_beeper
+      put_beeper
+      put_beeper
+      put_beeper
+      put_beeper
+      put_beeper
+      put_beeper
+      put_beeper
+      put_beeper
+      put_beeper
+      put_beeper
+      put_beeper
+      put_beeper
+  end
+
+  
   def drop
       put_beeper
       move

@@ -12,7 +12,7 @@ def task()
  world = Robota::World
   world.read_world("../worlds/grinch.kwld")
 
-  karel = JacobRobot.new(1, 6, Robota::NORTH, 26)
+  karel = JacobRobot.new(1, 6, Robota::NORTH, 24)
   karel.turn_right
   karel.go
   karel.turn_left
@@ -34,6 +34,41 @@ def task()
   karel.get_out
   karel.hop
   karel.turn_right
+  karel.move
+  karel.turn_left
+  karel.hop
+  karel.turn_left
+  karel.move
+  karel.steal
+  karel.turn_around
+  karel.get_out
+  karel.turn_right
+  karel.hop
+  karel.turn_around
+  karel.steal
+  karel.turn_around
+  karel.get_out
+  karel.turn_right
+  karel.hop
+  karel.turn_around
+  karel.steal
+  karel.turn_around
+  karel.get_out
+  karel.turn_right
+  karel.move
+  karel.turn_right
+  karel.hop
+  karel.hop
+  karel.hop
+  karel.turn_left
+  karel.move
+  karel.turn_right
+  karel.move
+  karel.move
+  karel.deposit
+  karel.turn_around
+  karel.move
+  karel.turn_off
 
 
 
