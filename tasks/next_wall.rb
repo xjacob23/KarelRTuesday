@@ -24,6 +24,20 @@ class NextWall < UrRobot
        end
     end
 
+   def trace_obj
+      until next_to_a_beeper?
+        move
+        put_beeper
+      end
+    end
+
+   def rotate
+      if front_is_clear?
+        turn_right
+        move
+        put_beeper
+      end
+    end
 
    def turneer
       if front_is_clear?
@@ -58,30 +72,6 @@ class NextWall < UrRobot
 
    def front_is_blocked?
     !front_is_clear?
-   end
-
-
-
-   def place_row
-       place1_or_2
-       move
-       place1_or_2
-       move 
-       place1_or_2
-       move
-       place1_or_2
-       move
-       place1_or_2
-       move 
-       place1_or_2
-       move
-       place1_or_2
-       move
-       place1_or_2
-       move
-       place1_or_2
-       move
-       place1_or_2
    end
 
    def turn_right

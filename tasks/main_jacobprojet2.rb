@@ -10,29 +10,39 @@ require_relative "next_wall"
 def task()
 
   world = Robota::World
-  world.read_world("../worlds/toit.kwld")
+  world.read_world("../worlds/projet world")
 
-  karel = NextWall.new(6, 6, Robota::NORTH, 200)
-  if karel.right_is_blocked?
-    if karel.front_is_clear?
-       karel.put_beeper
-       karel.move
-    end
-  else !karel.right_is_blocked?
-    move
-
-#while not_next to a beeper follow th trace/perimiter
-#Mr Advice 
-
-
-
-    
-  end 
+  karel = NextWall.new(3, 1, Robota::NORTH, 200)
+  if karel.next_to_a_beeper?
+     karel.pick_beeper
+  end
+ until karel.next_to_a_beeper?
+  karel.hop
+  karel.four
+  karel.turn_right
+  karel.four
+  if karel.next_to_a_beeper?
+    karel.pick_beeper
+  end
 end
+
+
+
+
+
+
+
+
+
+  
+  
+end
+ 
+
 
 if __FILE__ == $0
   if $graphical
-     screen = window(14, 75) # (size, speed)
+     screen = window(25, 75) # (size, speed)
      screen.run do
        task
      end
