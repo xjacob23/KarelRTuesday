@@ -49,6 +49,14 @@ module Mixer
       move
       move
   end
+
+  def bigo
+    four
+    four
+    four
+    four
+    four
+  end
   
   def two
       move
@@ -68,7 +76,72 @@ module Mixer
   end
 
 
+  def shortcut
+     four
+     turn_rightnmove
+     hop
+     turn_left
+  end
 
+  def putdown
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+  end
 
 
 end
