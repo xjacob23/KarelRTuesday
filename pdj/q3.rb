@@ -7,7 +7,7 @@ loop do
   name = gets.chomp
   break if name.downcase == 'q' 
   
-  if names.include?(name.capitalize) # See if the entered name is in the list
+  if names.include?(name.capitalize) # Shows if the entered name is in the list
     puts "Present"
   else
     puts "Absent"
