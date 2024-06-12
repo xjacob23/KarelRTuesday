@@ -4,7 +4,7 @@ values = gets.chomp.split  #Divides the string into an array of substrings based
 
 values.map!(&:to_f)   #This line converts every element to a floating-point number using map!(&:to_f)
 
-sorted_values = values.sort.reverse   #The array of floating-point numbers are sorted in descending order using "sort.reverse"
+sorted_values = values.sort   #The array of floating-point numbers are sorted in descending order using "sort."
 
 puts "Sorted valued from bottom to top"
 puts sorted_values
