@@ -4,28 +4,34 @@
 
 $graphical = true
 
-require_relative "jacob_robot"
+require_relative "t_finale_robot"
 
 # a task for a stair sweeper
 def task()
 
+  world = Robota::World
+  world.read_world("../worlds/tache_finale_b.kwld")
+
+  karel = TFinaleRobot.new(1, 1, Robota::NORTH, 0,)
+
+  karel.task2
+  
+
+  
+
+  
 
 
-  karel = JacobRobot.new(8, 8, Robota::NORTH, 1, :red)
-  9.times do 
-  	karel.turn_around
-  	karel.move
- 
- 
 
 
 
-end
- end
+
+    
+  end
 
 if __FILE__ == $0
   if $graphical
-     screen = window(14, 30) # (size, speed)
+     screen = window(14, 85) # (size, speed)
      screen.run do
        task
      end

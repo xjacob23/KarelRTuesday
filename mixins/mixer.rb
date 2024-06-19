@@ -50,7 +50,7 @@ module Mixer
       move
   end
 
-  def bigo
+  def twenty
     four
     four
     four
@@ -61,6 +61,39 @@ module Mixer
   def two
       move
       move
+  end
+
+  def big_go
+      go
+      go
+  end
+
+  def pick5
+      pick_beeper
+      pick_beeper
+      pick_beeper
+      pick_beeper
+      pick_beeper
+  end
+
+
+  def pick4
+      pick_beeper
+      pick_beeper
+      pick_beeper
+      pick_beeper
+  end
+
+    
+  def pick3
+      pick_beeper
+      pick_beeper
+      pick_beeper
+  end
+
+  def pick2
+      pick_beeper
+      pick_beeper
   end
 
   def recenter
@@ -141,6 +174,18 @@ module Mixer
     put_beeper
     put_beeper
     put_beeper
+  end
+
+
+
+  def move_to
+      turn_left
+      go
+      move
+      turn_left
+      go
+      go
+      turn_around
   end
 
 
